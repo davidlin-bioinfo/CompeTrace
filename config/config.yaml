@@ -82,103 +82,82 @@ platforms:
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
-#
-# 与热榜数据分开存储，按时间流展示
-# 每个源配置：id(唯一标识)、name(显示名称)、url(订阅地址)
-# enabled: 可选，默认 true
-# max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: true                       # 是否启用 RSS 抓取
+  enabled: true                        # 是否启用 RSS 抓取
 
-  # 文章新鲜度过滤配置（全局默认值）
-  # 过滤掉发布时间超过指定天数的旧文章，避免同一篇文章重复出现在推送中
-  #
-  # 过滤逻辑：
-  #   - 文章发布时间距当前时间（app.timezone 时区）超过 N 天则不推送
-  #   - 无发布时间的文章会被保留（不过滤）
-  #
-  # ⚠️ 过滤时机：在推送阶段过滤
-  #    - 所有文章都会存入数据库（MCP Server 的 AI 查询仍可访问）
-  #    - 只有新鲜的文章会被推送到通知渠道
   freshness_filter:
-    enabled: true                     # 是否启用新鲜度过滤（默认启用）
+    enabled: true                      # 是否启用新鲜度过滤
+    max_age_days: 7                    # 全局默认：只看 7 天内的新闻
 
-    max_age_days: 7                   # 最大文章年龄（天）
-                                      # - 正整数：只推送 N 天内的文章
-                                      # - 0：禁用过滤，推送所有文章
+  feeds:
+    # --- 🔬 1. 综合科研巨头 (含安全柜、离心机、培养箱) ---
+    - id: "thermo-fisher"
+      name: "赛默飞 (Thermo Fisher) - 官方动态"
+      url: "https://ir.thermofisher.com/rss/news-releases.xml"
+      max_age_days: 14                 # 巨头动态建议保留时间稍长
 
-  # 单个 feed 可配置 max_age_days 覆盖全局设置：
-  # - 不配置：使用全局 freshness_filter.max_age_days（默认 3 天）
-  # - 正整数：覆盖全局设置，只推送此天数内的文章
-  # - 0：禁用此频道的新鲜度过滤，推送所有文章
-feeds:
-  # --- 1. 综合与科研巨头 (含安全柜、离心机、培养箱) ---
-  - id: "TF-all"
-    name: "赛默飞 (Thermo Fisher)"
-    url: "https://ir.thermofisher.com/rss/news-releases.xml"
+    - id: "danaher-beckman"
+      name: "贝克曼库尔特 (Beckman Coulter/Danaher)"
+      url: "https://investors.danaher.com/rss/press-releases.xml"
 
-  - id: "Danaher-BC"
-    name: "贝克曼库尔特 (Danaher/Beckman)"
-    url: "https://investors.danaher.com/rss/press-releases.xml"
+    - id: "agilent-tech"
+      name: "安捷伦 (Agilent) - 新闻中心"
+      url: "https://www.agilent.com/about/newsroom/rss/news-releases.xml"
 
-  - id: "Agilent-all"
-    name: "安捷伦 (Agilent)"
-    url: "https://www.agilent.com/about/newsroom/rss/news-releases.xml"
+    # --- ❄️ 2. 医用冷链与培养箱 (PHCbi, 海尔, 美的) ---
+    - id: "phcbi-global"
+      name: "PHCbi (原松下制冷) - 全球官宣"
+      url: "https://www.phchd.com/global/news/rss.xml"
 
-  # --- 2. 医用冷链与培养箱 (PHCbi, 海尔, 美的) ---
-  - id: "PHC-all"
-    name: "PHCbi (原松下制冷)"
-    url: "https://www.phchd.com/global/news/rss.xml"
+    - id: "midea-biomedical"
+      name: "美的集团 (含美的生物医疗)"
+      url: "https://www.midea-group.com/Newsroom.rss"
 
-  - id: "Midea-Med"
-    name: "美的集团 (含美的生物医疗动态)"
-    url: "https://www.midea-group.com/Newsroom.rss"
+    - id: "haier-biomedical"
+      name: "海尔生物 (Haier Bio) - 官网动态"
+      url: "https://www.haierbiomedical.com/news"  # ⚠️ 建议通过 RSSHub 转换为 XML 格式
 
-  - id: "Haier-Bio"
-    name: "海尔生物 (Haier Biomedical)"
-    url: "https://www.haierbiomedical.com/news" # 建议配合 RSSHub 使用
+    # --- 🌀 3. 离心机与精密仪器 ---
+    - id: "eppendorf-news"
+      name: "艾本德 (Eppendorf) - 媒体中心"
+      url: "https://www.eppendorf.com/group/news-media/"
 
-  # --- 3. 离心机与精密仪器 ---
-  - id: "Eppendorf-news"
-    name: "艾本德 (Eppendorf)"
-    url: "https://www.eppendorf.com/group/news-media/" # 展会新品发布核心页
+    - id: "sigma-centrifuges"
+      name: "西格玛 (Sigma) - 离心机快讯"
+      url: "https://www.sigma-zentrifugen.de/en/news"
 
-  - id: "Sigma-all"
-    name: "西格玛 (Sigma Centrifuges)"
-    url: "https://www.sigma-zentrifugen.de/en/news"
+    # --- 🌡️ 4. 培养箱、环境设备与灭菌器 ---
+    - id: "memmert-precision"
+      name: "美墨尔特 (Memmert) - 动态"
+      url: "https://www.memmert.com/news/news/"
 
-  # --- 4. 培养箱与环境设备 ---
-  - id: "Memmert-all"
-    name: "美墨尔特 (Memmert)"
-    url: "https://www.memmert.com/news/news/"
+    - id: "binder-world"
+      name: "宾德 (Binder) - 行业新闻"
+      url: "https://www.binder-world.com/en/news-press"
 
-  - id: "Binder-news"
-    name: "宾德 (Binder)"
-    url: "https://www.binder-world.com/en/news-press"
+    - id: "tuttnauer-autoclave"
+      name: "图特纳 (Tuttnauer) - 灭菌技术博客"
+      url: "https://tuttnauer.com/blog"
 
-  # --- 5. 灭菌器与安全防护 ---
-  - id: "Tuttnauer-all"
-    name: "图特纳 (Tuttnauer)"
-    url: "https://tuttnauer.com/blog"
+    # --- 🛡️ 5. 安全柜与国产领军 ---
+    - id: "labconco-bsc"
+      name: "Labconco - 安全柜与实验室防护"
+      url: "https://www.labconco.com/articles"
 
-  - id: "Labconco-all"
-    name: "Labconco (安全柜动态)"
-    url: "https://www.labconco.com/articles"
+    - id: "biobase-china"
+      name: "博科 (BIOBASE) - 展会与新品动态"
+      url: "https://www.biobase.cc/news"
 
-  # --- 6. 国内领军企业 (博科, 新华) ---
-  - id: "BIOBASE-news"
-    name: "博科 (BIOBASE)"
-    url: "https://www.biobase.cc/news"
+    - id: "shinva-medical"
+      name: "新华医疗 (Shinva) - 灭菌与医疗动态"
+      url: "http://www.shinva.com/news/"
 
-  - id: "Shinva-all"
-    name: "新华医疗 (Shinva)"
-    url: "http://www.shinva.com/news/"
-
-  # --- 7. 行业展会 (本周 Analytica 2026 集中源) ---
-  - id: "Analytica-2026"
-    name: "慕尼黑分析生化展 (本周核心动态)"
-    url: "https://analytica.de/en/press/press-releases/"
+    # --- 📅 6. 行业展会 (实时追踪) ---
+    - id: "analytica-2026"
+      name: "慕尼黑分析生化展 (Analytica) - 本周焦点"
+      url: "https://analytica.de/en/press/press-releases/"
+      max_age_days: 3                  # 展会期间消息极其密集，只看 3 天内最新的
 
 # ═══════════════════════════════════════════════════════════════
 #                    TrendRadar 配置文件
