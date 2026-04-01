@@ -153,106 +153,176 @@
 #                         企业与品牌
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+# 1. 生物安全柜 (BSC)
+/赛默飞|Thermo\s?Fisher|Herasafe|1300\s?系列/ => 赛默飞世尔 (Thermo Fisher)
+/Labconco|Prism\s?OS|Axiom|Logic\+/ => Labconco
+/博科|BIOBASE|甘宜超/ => 博科集团 (BIOBASE)
+/海尔生物|Haier\s?Biomedical|盈康一生/ => 海尔生物 (Haier)
+/艺思高|Esco|Airstream|Labculture/ => 艺思高 (Esco)
 
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+# 2. 药瓶/医用/超低温冰箱 (Medical Refrigeration)
+/PHCbi|松下制冷|TwinGuard|V-Drive/ => PHCbi (原松下)
+/海尔生物|UltraEco|航天冰箱|CryoBio/ => 海尔生物 (Haier)
+/中科美菱|Meling|深冷|菁安/ => 中科美菱 (Meling)
+/艾本德|Eppendorf|CryoCube/ => 艾本德 (Eppendorf)
+/美的生物|Midea\s?Biomedical|PST\+ 智能净化/ => 美的生物 (Midea)
 
-/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
+# 3. 离心机 (Centrifuge)
+/贝克曼|Beckman\s?Coulter|丹纳赫|Avanti|Optima/ => 贝克曼库尔特 (Beckman)
+/艾本德|Eppendorf|SpinPro|5425R/ => 艾本德 (Eppendorf)
+/赛默飞|Sorvall|Multifuge|Lynx/ => 赛默飞世尔 (Thermo Fisher)
+/湖南湘仪|湘仪离心机|Xiangyi|Cence/ => 湖南湘仪 (Xiangyi)
+/西格玛|Sigma\s?离心机/ => 西格玛 (Sigma)
 
-/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
+# 4. 培养箱 (Incubator)
+/赛默飞|Heracell|Forma|Steri-Cycle/ => 赛默飞世尔 (Thermo Fisher)
+/宾德|Binder|APT\.line|CB\s?系列/ => 宾德 (Binder)
+/PHCbi|松下培养箱|IncuSafe/ => PHCbi (原松下)
+/上海一恒|一恒仪器|Yiheng/ => 上海一恒 (Yiheng)
+/美墨尔特|Memmert|ICO\s?系列/ => 美墨尔特 (Memmert)
 
-/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
+# 5. 灭菌器 (Autoclave)
+/新华医疗|新华灭菌|Shinva/ => 山东新华医疗 (Shinva)
+/图特纳|Tuttnauer|Elara|T-Max/ => 图特纳 (Tuttnauer)
+/Systec|德赛泰克|V-Series|D-Series/ => Systec
+/博科|BIOBASE|BKQ\s?系列/ => 博科集团 (BIOBASE)
+/雅马拓|Yamato|灭菌器/ => 雅马拓 (Yamato)
 
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+# 1. Biological Safety Cabinet (BSC)
+/Thermo\s?Fisher|Herasafe|1300\s?Series/ => Thermo Fisher Scientific
+/Labconco|Prism\s?OS|Axiom|Logic\+/ => Labconco
+/BIOBASE|Gan\s?Yichao/ => BIOBASE Group
+/Haier\s?Biomedical|Yingkang|UltraEco/ => Haier Biomedical
+/Esco\s?Lifesciences|Airstream|Labculture/ => Esco
 
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
+# 2. Medical & Ultra-Low Temp Refrigeration
+/PHCbi|Panasonic\s?Healthcare|TwinGuard|V-Drive/ => PHCbi
+/Haier\s?Biomedical|UltraEco|CryoBio/ => Haier Biomedical
+/Meling\s?Biomedical|Meling/ => Meling Biomedical
+/Eppendorf|CryoCube/ => Eppendorf
+/Midea\s?Biomedical|PST\+ Purification/ => Midea Biomedical
 
-/黑神话|冯骥/ => 黑神话悟空
+# 3. Centrifuge
+/Beckman\s?Coulter|Danaher|Avanti|Optima/ => Beckman Coulter
+/Eppendorf|SpinPro|5425R/ => Eppendorf
+/Thermo\s?Fisher|Sorvall|Multifuge|Lynx/ => Thermo Fisher Scientific
+/Xiangyi|Cence/ => Xiangyi Centrifuge
+/Sigma\s?Centrifuges/ => Sigma
 
-/影之刃零|梁其伟/ => 影之刃零
+# 4. Incubator
+/Thermo\s?Fisher|Heracell|Forma|Steri-Cycle/ => Thermo Fisher Scientific
+/Binder|APT\.line|CB\s?Series/ => Binder
+/PHCbi|IncuSafe/ => PHCbi
+/Yiheng\s?Instrument|Yiheng/ => Yiheng
+/Memmert|ICO\s?series/ => Memmert
 
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-申奥
-
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
-
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+# 5. Autoclave
+/Shinva|Shinva\s?Medical/ => Shinva Medical
+/Tuttnauer|Elara|T-Max/ => Tuttnauer
+/Systec|V-Series|D-Series/ => Systec
+/BIOBASE|BKQ\s?Series/ => BIOBASE Group
+/Yamato\s?Scientific|Yamato/ => Yamato
 
 
 # ═══════════════════════════════════════════════════════════════
 #                         国家与地区
 # ═══════════════════════════════════════════════════════════════
 
-[中国]
-国产
-中国
+# --- [新兴市场 - 亚太] ---
+/日本|东瀛|\bJapan\b/ => 日本
+/韩国|韩方|南韩|\bKorea\b/ => 韩国
+/印尼|印度尼西亚|\bIndonesia\b/ => 印尼
+/澳大利亚|澳洲|\bAustralia\b/ => 澳大利亚
+/港澳台|香港|澳门|台湾|新西兰|\bHK\b|\bMacau\b|\bTaiwan\b|\bNew\sZealand\b/ => 港澳台新西兰
+/东南亚|越|泰|菲|新|马|\bASEAN\b/ => 东南亚
+/南亚|巴基斯坦|斯里兰卡|孟加拉/ => 南亚
+/印度|莫迪|\bIndia\b/ => 印度
+/以色列|特拉维夫|\bIsrael\b/ => 以色列
 
-[东亚]
-日本
-朝鲜
-韩国
+# --- [新兴市场 - 东欧独联体] ---
+/东欧|波兰|捷克|匈牙利|罗马尼亚/ => 东欧
+/独联体|俄罗斯|俄国|白俄|哈萨克|中亚五国|\bCIS\b/ => 独联体
 
-[北美]
-美国
-加拿大
+# --- [新兴市场 - 拉美] ---
+/拉美|拉丁美洲|巴西|墨西哥|阿根廷|智利|秘鲁|\bLATAM\b/ => 拉美
 
-[西欧]
-法国
-英国
+# --- [传统市场 - 欧盟] ---
+/南欧|意大利|西班牙|葡萄牙|希腊/ => 南欧
+/西欧|法国|荷兰|比利时|卢森堡/ => 西欧
+/中欧|德国|奥地利|瑞士/ => 中欧
 
-/俄罗斯|俄国/ => 俄罗斯
+# --- [传统市场 - 英国/爱尔兰] ---
+/英国子公司|英国仓|英国大客户|英伦|伦敦|\bUK\b/ => 英国相关
+/爱尔兰|\bIreland\b/ => 爱尔兰
 
-印度
+# --- [传统市场 - 北美] ---
+/美国仓|美国大客户|美方|美利坚|\bUSA\b/ => 美国相关
+/加拿大|\bCanada\b/ => 加拿大
+
+# --- [项目市场 - 非洲] ---
+/非洲法语区|西非|北非|马格里布/ => 非洲法语区
+/非洲英语区|南非|东非|尼日利亚|肯尼亚/ => 非洲英语区
+
+# --- [项目市场 - 国际组织] ---
+/UNICEF|联合国儿童基金会/ => UNICEF
+/UN大客户|联合国采购/ => UN大客户
+/NGO|非政府组织|红十字会/ => NGO
+/WHO|世卫组织/ => WHO
+
+# --- [生态 - 国内/援外] ---
+/国内贸易公司|内贸代理/ => 国内贸易公司
+/援外|对外援助|中国援助|\bChina\sAid\b/ => 援外
+
+# --- [中东] ---
+/中东|沙特|阿联酋|卡塔尔|迪拜|土耳其|伊朗/ => 中东（除以色列）
+
+# --- [APAC] ---
+/Japan/ => Japan
+/South\s?Korea|ROK/ => Korea
+/Indonesia/ => Indonesia
+/Australia/ => Australia
+/Hong\s?Kong|Macau|Taiwan|New\s?Zealand/ => HK/MO/TW/NZ
+/Southeast\s?Asia|ASEAN|Vietnam|Thailand|Singapore/ => Southeast Asia
+/South\s?Asia/ => South Asia
+/India/ => India
+/Israel/ => Israel
+
+# --- [Eastern Europe & CIS] ---
+/Eastern\s?Europe/ => Eastern Europe
+/CIS|Russia|Belarus|Kazakhstan/ => CIS
+
+# --- [LATAM] ---
+/Latin\s?America|Brazil|Mexico|Argentina/ => LATAM
+
+# --- [EU] ---
+/Southern\s?Europe|Italy|Spain/ => Southern Europe
+/Western\s?Europe|France|Netherlands/ => Western Europe
+/Central\s?Europe|Germany|Switzerland/ => Central Europe
+
+# --- [UK & Ireland] ---
+/UK\s?Subsidiary|UK\s?VIP|London/ => UK Related
+/Ireland/ => Ireland
+
+# --- [North America] ---
+/US\s?Warehouse|US\s?VIP|USA/ => US Related
+/Canada/ => Canada
+
+# --- [Africa] ---
+/French-speaking\s?Africa/ => Africa (French)
+/English-speaking\s?Africa/ => Africa (English)
+
+# --- [UN & NGO] ---
+/UNICEF/ => UNICEF
+/UN\s?VIP|UN\s?Procurement/ => UN VIP
+/NGO/ => NGO
+/WHO|World\s?Health\s?Organization/ => WHO
+
+# --- [Ecosystem] ---
+/Domestic\s?Trading\s?Co/ => Domestic Trading Co
+/Foreign\s?Aid/ => Foreign Aid
+
+# --- [Middle East] ---
+/Middle\s?East|Saudi|UAE|Qatar|Dubai/ => Middle East (Excl. Israel)
 
 
-# ═══════════════════════════════════════════════════════════════
-#                         科技领域
-# ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
-/(?<![a-zA-Z])ai(?![a-zA-Z])/
-人工智能
-
-[芯片]
-芯片
-光刻机
-半导体
-
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
-
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
-
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
-
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
-
-# 前沿科技
-量子
-脑机
-基因
-
-# 产业政策
-生产力
