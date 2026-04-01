@@ -29,7 +29,6 @@
 
 [GLOBAL_FILTER]
 # 过滤标题党
-震惊
 
 
 
@@ -323,6 +322,3 @@
 
 # --- [Middle East] ---
 /Middle\s?East|Saudi|UAE|Qatar|Dubai/ => Middle East (Excl. Israel)
-
-
-
