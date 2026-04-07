@@ -153,10 +153,10 @@
 # ═══════════════════════════════════════════════════════════════
 
 # 1. 生物安全柜 (BSC)
-/赛默飞|Thermo\s?Fisher|Herasafe|1300\s?系列/ => 赛默飞世尔 (Thermo Fisher)
-/Labconco|Prism\s?OS|Axiom|Logic\+/ => Labconco
-/博科|BIOBASE|甘宜超/ => 博科集团 (BIOBASE)
-/海尔生物|Haier\s?Biomedical|盈康一生/ => 海尔生物 (Haier)
+/赛默飞|ThermoFisher|Herasafe|1300系列/ => 赛默飞世尔 (Thermo Fisher)
+/Labconco|PrismOS|Axiom|Logic\+/ => Labconco
+/博科|BIOBASE|/ => 博科集团 (BIOBASE)
+/海尔生物|HaierBiomedical|盈康一生/ => 海尔生物 (Haier)
 /艺思高|Esco|Airstream|Labculture/ => 艺思高 (Esco)
 
 # 2. 药瓶/医用/超低温冰箱 (Medical Refrigeration)
@@ -164,63 +164,63 @@
 /海尔生物|UltraEco|航天冰箱|CryoBio/ => 海尔生物 (Haier)
 /中科美菱|Meling|深冷|菁安/ => 中科美菱 (Meling)
 /艾本德|Eppendorf|CryoCube/ => 艾本德 (Eppendorf)
-/美的生物|Midea\s?Biomedical|PST\+ 智能净化/ => 美的生物 (Midea)
+/美的生物|MideaBiomedical|PST\+ 智能净化/ => 美的生物 (Midea)
 
 # 3. 离心机 (Centrifuge)
-/贝克曼|Beckman\s?Coulter|丹纳赫|Avanti|Optima/ => 贝克曼库尔特 (Beckman)
+/贝克曼|BeckmanCoulter|丹纳赫|Avanti|Optima/ => 贝克曼库尔特 (Beckman)
 /艾本德|Eppendorf|SpinPro|5425R/ => 艾本德 (Eppendorf)
 /赛默飞|Sorvall|Multifuge|Lynx/ => 赛默飞世尔 (Thermo Fisher)
 /湖南湘仪|湘仪离心机|Xiangyi|Cence/ => 湖南湘仪 (Xiangyi)
-/西格玛|Sigma\s?离心机/ => 西格玛 (Sigma)
+/西格玛|Sigma离心机/ => 西格玛 (Sigma)
 
 # 4. 培养箱 (Incubator)
 /赛默飞|Heracell|Forma|Steri-Cycle/ => 赛默飞世尔 (Thermo Fisher)
-/宾德|Binder|APT\.line|CB\s?系列/ => 宾德 (Binder)
+/宾德|Binder|APT\.line|CB系列/ => 宾德 (Binder)
 /PHCbi|松下培养箱|IncuSafe/ => PHCbi (原松下)
 /上海一恒|一恒仪器|Yiheng/ => 上海一恒 (Yiheng)
-/美墨尔特|Memmert|ICO\s?系列/ => 美墨尔特 (Memmert)
+/美墨尔特|Memmert|ICO系列/ => 美墨尔特 (Memmert)
 
 # 5. 灭菌器 (Autoclave)
 /新华医疗|新华灭菌|Shinva/ => 山东新华医疗 (Shinva)
 /图特纳|Tuttnauer|Elara|T-Max/ => 图特纳 (Tuttnauer)
 /Systec|德赛泰克|V-Series|D-Series/ => Systec
-/博科|BIOBASE|BKQ\s?系列/ => 博科集团 (BIOBASE)
+/博科|BIOBASE|BKQ系列/ => 博科集团 (BIOBASE)
 /雅马拓|Yamato|灭菌器/ => 雅马拓 (Yamato)
 
 # 1. Biological Safety Cabinet (BSC)
-/Thermo\s?Fisher|Herasafe|1300\s?Series/ => Thermo Fisher Scientific
-/Labconco|Prism\s?OS|Axiom|Logic\+/ => Labconco
-/BIOBASE|Gan\s?Yichao/ => BIOBASE Group
-/Haier\s?Biomedical|Yingkang|UltraEco/ => Haier Biomedical
-/Esco\s?Lifesciences|Airstream|Labculture/ => Esco
+/ThermoFisher|Herasafe|1300Series/ => Thermo Fisher Scientific
+/Labconco|PrismOS|Axiom|Logic\+/ => Labconco
+/BIOBASE|GanYichao/ => BIOBASE Group
+/HaierBiomedical|Yingkang|UltraEco/ => Haier Biomedical
+/EscoLifesciences|Airstream|Labculture/ => Esco
 
 # 2. Medical & Ultra-Low Temp Refrigeration
-/PHCbi|Panasonic\s?Healthcare|TwinGuard|V-Drive/ => PHCbi
-/Haier\s?Biomedical|UltraEco|CryoBio/ => Haier Biomedical
-/Meling\s?Biomedical|Meling/ => Meling Biomedical
+/PHCbi|PanasonicHealthcare|TwinGuard|V-Drive/ => PHCbi
+/HaierBiomedical|UltraEco|CryoBio/ => Haier Biomedical
+/MelingBiomedical|Meling/ => Meling Biomedical
 /Eppendorf|CryoCube/ => Eppendorf
-/Midea\s?Biomedical|PST\+ Purification/ => Midea Biomedical
+/MideaBiomedical|PST\+ Purification/ => Midea Biomedical
 
 # 3. Centrifuge
-/Beckman\s?Coulter|Danaher|Avanti|Optima/ => Beckman Coulter
+/BeckmanCoulter|Danaher|Avanti|Optima/ => Beckman Coulter
 /Eppendorf|SpinPro|5425R/ => Eppendorf
-/Thermo\s?Fisher|Sorvall|Multifuge|Lynx/ => Thermo Fisher Scientific
+/ThermoFisher|Sorvall|Multifuge|Lynx/ => Thermo Fisher Scientific
 /Xiangyi|Cence/ => Xiangyi Centrifuge
-/Sigma\s?Centrifuges/ => Sigma
+/SigmaCentrifuges/ => Sigma
 
 # 4. Incubator
-/Thermo\s?Fisher|Heracell|Forma|Steri-Cycle/ => Thermo Fisher Scientific
-/Binder|APT\.line|CB\s?Series/ => Binder
+/ThermoFisher|Heracell|Forma|Steri-Cycle/ => Thermo Fisher Scientific
+/Binder|APT\.line|CBSeries/ => Binder
 /PHCbi|IncuSafe/ => PHCbi
-/Yiheng\s?Instrument|Yiheng/ => Yiheng
-/Memmert|ICO\s?series/ => Memmert
+/YihengInstrument|Yiheng/ => Yiheng
+/Memmert|ICOseries/ => Memmert
 
 # 5. Autoclave
-/Shinva|Shinva\s?Medical/ => Shinva Medical
+/Shinva|ShinvaMedical/ => Shinva Medical
 /Tuttnauer|Elara|T-Max/ => Tuttnauer
 /Systec|V-Series|D-Series/ => Systec
-/BIOBASE|BKQ\s?Series/ => BIOBASE Group
-/Yamato\s?Scientific|Yamato/ => Yamato
+/BIOBASE|BKQSeries/ => BIOBASE Group
+/YamatoScientific|Yamato/ => Yamato
 
 
 
